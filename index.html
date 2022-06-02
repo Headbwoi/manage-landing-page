@@ -12,18 +12,69 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <script src="index.js" defer></script>
+
 </head>
-<body class="font-vietnam bg-brightRed">
+<body class="font-vietnam">
 
-  Pricing
-  Product
-  About Us
-  Careers
-  Community
+  <main>
 
-  Get Started
+    <!-- hero section -->
+    <section class="hero">
+      <div class="container">
+        <nav class="relative  pt-14 pb-11 lg:pb-28">
 
-  Bring everyone together to build better products.
+          <div class="px-6 lg:px-0 flex justify-between items-center relative z-10">
+             <!-- logo -->
+             <img src="images/logo.svg" alt="logo">
+          
+             <!-- links -->
+             <div class="links hidden lg:flex lg:items-center lg:space-x-7">
+               <a href="#" class="font-medium text-veryDarkBlue">Pricing</a>
+               <a href="#" class="font-medium text-veryDarkBlue">Product</a>
+               <a href="#" class="font-medium text-veryDarkBlue">About Us</a>
+               <a href="#" class="font-medium text-veryDarkBlue">Careers</a>
+               <a href="#" class="font-medium text-veryDarkBlue">Community</a>
+             </div>
+   
+             <!-- cta -->
+               <a href="#" class="hidden lg:flex font-medium text-veryLightGray bg-brightRed shadow-md shadow-veryPaleRed py-3 px-8 rounded-full">Get Started</a>
+              <!-- hamburger icon -->
+              <img src="images/icon-hamburger.svg" alt="icon-hamburger" class="duration-[400] lg:hidden" id="hamburger">
+              
+          </div>
+
+
+          <!-- mobile menu -->
+          <div class="mobilemenu block absolute top-0 left-0 w-full h-screen px-6 lg:px-0 scale-0 invisible opacity-0 duration-500 lg:hidden">
+            <div class="flex items-center justify-between pt-14 pb-11">
+              <!-- logo -->
+            <img src="images/logo.svg" alt="logo">
+            </div>
+
+            <!-- links -->
+            <div class="links flex items-center justify-center flex-col space-y-7 bg-veryLightGray rounded-lg py-10">
+               <a href="#" class="font-medium text-veryDarkBlue text-lg">Pricing</a>
+               <a href="#" class="font-medium text-veryDarkBlue text-lg">Product</a>
+               <a href="#" class="font-medium text-veryDarkBlue text-lg">About Us</a>
+               <a href="#" class="font-medium text-veryDarkBlue text-lg">Careers</a>
+               <a href="#" class="font-medium text-veryDarkBlue text-lg">Community</a>
+            </div>
+
+
+          </div>
+
+        </nav>
+
+        <div class="hero-content">
+          
+        </div>
+      </div>
+    </section>
+    
+  </main>
+
+  <!-- Bring everyone together to build better products.
 
   Manage makes it simple for software teams to plan day-to-day 
   tasks while keeping the larger team goals in view.
@@ -95,6 +146,6 @@
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>
