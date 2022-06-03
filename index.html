@@ -15,12 +15,12 @@
   <script src="index.js" defer></script>
 
 </head>
-<body class="font-vietnam">
+<body class="font-vietnam overflow-x-hidden">
 
   <main>
 
     <!-- hero section -->
-    <section class="hero">
+    <section class="hero relative before:absolute before:-top-8 before:-right-1 before:w-60 before:h-[26.8125rem] before:bg-veryPaleRed before:block before:rotate-45 before:rounded-b-full before:-z-10 lg:before:-top-20 lg:before:w-[29rem] lg:before:h-[48.8125rem] overflow-hidden">
       <div class="container">
         <nav class="relative  pt-14 pb-11 lg:pb-28">
 
@@ -38,7 +38,7 @@
              </div>
    
              <!-- cta -->
-               <a href="#" class="hidden lg:flex font-medium text-veryLightGray bg-brightRed shadow-md shadow-veryPaleRed py-3 px-8 rounded-full">Get Started</a>
+               <a href="#" class="hidden lg:flex font-medium text-veryLightGray bg-brightRed shadow-xl shadow-veryPaleRed py-3 px-8 rounded-full">Get Started</a>
               <!-- hamburger icon -->
               <img src="images/icon-hamburger.svg" alt="icon-hamburger" class="duration-[400] lg:hidden" id="hamburger">
               
@@ -67,17 +67,28 @@
         </nav>
 
         <div class="hero-content">
-          
+          <div class="flex justify-between items-center flex-col lg:flex-row-reverse">
+            <!-- image -->
+            <div class="image">
+              <img src="images/illustration-intro.svg" alt="illustration-intro" class="mb-2 lg:flex-[50%]">
+            </div>
+
+            <div class="text px-7 text-center lg:px-0 lg:text-left lg:flex-[50%] ">
+              <h1 class="text-veryDarkBlue text-4xl font-bold lg:text-6xl mb-4">Bring everyone together to build better products.</h1>
+              <p class="text-darkGrayishBlue font-normal text-xl mb-8 lg:w-[22.625rem] ">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
+              <!-- cta -->
+              <a href="#" class="block w-fit mx-auto mb-5 font-medium text-veryLightGray bg-brightRed shadow-xl shadow-veryPaleRed py-3 px-9 rounded-full lg:mx-0">Get Started</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     
   </main>
 
-  <!-- Bring everyone together to build better products.
+  <!-- 
 
-  Manage makes it simple for software teams to plan day-to-day 
-  tasks while keeping the larger team goals in view.
+  
 
   Get Started
 
