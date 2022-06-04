@@ -15,12 +15,12 @@
   <script src="index.js" defer></script>
 
 </head>
-<body class="font-vietnam overflow-x-hidden">
+<body class="font-vietnam">
 
   <main>
 
     <!-- hero section -->
-    <section class="hero relative before:absolute before:-top-8 before:-right-1 before:w-60 before:h-[26.8125rem] before:bg-veryPaleRed before:block before:rotate-45 before:rounded-b-full before:-z-10 lg:before:-top-20 lg:before:w-[29rem] lg:before:h-[48.8125rem] overflow-hidden">
+    <section class="hero relative before:absolute before:-top-8 before:-right-1 before:w-60 before:h-[26.8125rem] before:bg-veryPaleRed before:block before:rotate-45 before:rounded-b-full before:-z-10 lg:before:-top-20 lg:before:w-[29rem] lg:before:h-[48.8125rem] after:absolute after:bottom-0 after:-right-28 after:w-48 after:h-[20.8125rem] after:bg-veryPaleRed after:rotate-45 after:rounded-b-full after:-z-10 lg:after:hidden overflow-hidden">
       <div class="container">
         <nav class="relative  pt-14 pb-11 lg:pb-28">
 
@@ -46,7 +46,7 @@
 
 
           <!-- mobile menu -->
-          <div class="mobilemenu block absolute top-0 left-0 w-full h-screen px-6 lg:px-0 scale-0 invisible opacity-0 duration-500 lg:hidden">
+          <div class="mobilemenu block absolute top-0 left-0 w-full h-full px-6 lg:px-0 scale-0 invisible opacity-0 duration-500 lg:hidden">
             <div class="flex items-center justify-between pt-14 pb-11">
               <!-- logo -->
             <img src="images/logo.svg" alt="logo">
@@ -66,13 +66,15 @@
 
         </nav>
 
+        <!-- hero content -->
         <div class="hero-content">
-          <div class="flex justify-between items-center flex-col lg:flex-row-reverse">
+          <div class="flex justify-between items-center flex-col lg:flex-row-reverse mb-[5.625rem]">
             <!-- image -->
             <div class="image">
               <img src="images/illustration-intro.svg" alt="illustration-intro" class="mb-2 lg:flex-[50%]">
             </div>
 
+            <!-- text -->
             <div class="text px-7 text-center lg:px-0 lg:text-left lg:flex-[50%] ">
               <h1 class="text-veryDarkBlue text-4xl font-bold lg:text-6xl mb-4">Bring everyone together to build better products.</h1>
               <p class="text-darkGrayishBlue font-normal text-xl mb-8 lg:w-[22.625rem] ">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
@@ -83,20 +85,26 @@
         </div>
       </div>
     </section>
+
+    <!-- features section -->
+    <section class="features relative">
+
+      <div class="container">
+        <div class="flex items-center justify-center flex-col lg:flex-row">
+          <!-- intro-text-about-manage -->
+          <div class="text px-7 text-center lg:px-0 lg:text-left lg:flex-[50%] ">
+            <h1 class="text-veryDarkBlue text-4xl font-bold lg:text-6xl mb-4">What's different about Manage?</h1>
+            <p class="text-darkGrayishBlue font-normal text-lg mb-8 lg:w-[22.625rem] ">Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.</p>
+          
+          </div>
+      </div>
+      </div>
+
+    </section>
     
   </main>
 
-  <!-- 
-
-  
-
-  Get Started
-
-  What’s different about Manage?
-
-  Manage provides all the functionality your team needs, without 
-  the complexity. Our software is tailor-made for modern digital 
-  product teams. 
+  <!--  
 
   01
   Track company-wide progress
