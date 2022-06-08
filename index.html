@@ -15,7 +15,7 @@
   <script src="index.js" defer></script>
 
 </head>
-<body class="font-vietnam">
+<body class="font-vietnam overflow-x-hidden">
 
   <main>
 
@@ -30,15 +30,15 @@
           
              <!-- links -->
              <div class="links hidden lg:flex lg:items-center lg:space-x-7">
-               <a href="#" class="font-medium text-veryDarkBlue">Pricing</a>
-               <a href="#" class="font-medium text-veryDarkBlue">Product</a>
-               <a href="#" class="font-medium text-veryDarkBlue">About Us</a>
-               <a href="#" class="font-medium text-veryDarkBlue">Careers</a>
-               <a href="#" class="font-medium text-veryDarkBlue">Community</a>
+               <a href="#" class="font-medium text-veryDarkBlue hover:text-darkGrayishBlue">Pricing</a>
+               <a href="#" class="font-medium text-veryDarkBlue hover:text-darkGrayishBlue">Product</a>
+               <a href="#" class="font-medium text-veryDarkBlue hover:text-darkGrayishBlue">About Us</a>
+               <a href="#" class="font-medium text-veryDarkBlue hover:text-darkGrayishBlue">Careers</a>
+               <a href="#" class="font-medium text-veryDarkBlue hover:text-darkGrayishBlue">Community</a>
              </div>
    
              <!-- cta -->
-               <a href="#" class="hidden lg:flex font-medium text-veryLightGray bg-brightRed shadow-xl shadow-veryPaleRed py-3 px-8 rounded-full">Get Started</a>
+               <a href="#" class="hidden lg:flex btn">Get Started</a>
               <!-- hamburger icon -->
               <img src="images/icon-hamburger.svg" alt="icon-hamburger" class="duration-[400] lg:hidden" id="hamburger">
               
@@ -46,7 +46,7 @@
 
 
           <!-- mobile menu -->
-          <div class="mobilemenu block absolute top-0 left-0 w-full h-full px-6 lg:px-0 scale-0 invisible opacity-0 duration-500 lg:hidden">
+          <div class="mobilemenu block absolute top-0 left-0 w-full h-screen px-6 lg:px-0 scale-0 invisible opacity-0 duration-500 lg:hidden">
             <div class="flex items-center justify-between pt-14 pb-11">
               <!-- logo -->
             <img src="images/logo.svg" alt="logo">
@@ -79,7 +79,7 @@
               <h1 class="text-veryDarkBlue text-4xl font-bold lg:text-6xl mb-4">Bring everyone together to build better products.</h1>
               <p class="text-darkGrayishBlue font-normal text-xl mb-8 lg:w-[22.625rem] ">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
               <!-- cta -->
-              <a href="#" class="block w-fit mx-auto mb-5 font-medium text-veryLightGray bg-brightRed shadow-xl shadow-veryPaleRed py-3 px-9 rounded-full lg:mx-0">Get Started</a>
+              <a href="#" class="block w-fit mx-auto mb-5 btn lg:mx-0">Get Started</a>
             </div>
           </div>
         </div>
@@ -126,19 +126,97 @@
     </section>
 
     <!-- testimonial section-->
-    <!-- relative before:absolute before:hidden lg:before:block lg:before:bg-veryPaleRed lg:before:rotate-45 lg:before:rounded-t-full lg:before:-z-10 lg:before:top-80 lg:before:-left-40 lg:before:w-[25rem] lg:before:h-[35.8125rem] -->
 
-    <section class="testimonial">
+    <section class="testimonial relative before:absolute before:hidden lg:before:block lg:before:bg-veryPaleRed lg:before:rotate-45 lg:before:rounded-t-full lg:before:-z-10 lg:before:-top-80 lg:before:-left-40 lg:before:w-[25rem] lg:before:h-[35.8125rem] ">
 
-      <div class="container">
+      <div class="px-7 lg:px-0">
 
         <div class="heading text-center">
-          <h1 class="text-veryDarkBlue text-4xl font-bold lg:text-5xl mb-14 lg:mb-16">What they’ve said</h1>
+          <h1 class="text-veryDarkBlue text-4xl font-bold lg:text-5xl mb-28 lg:mb-32">What they’ve said</h1>
         </div>
 
 
-        <div class="flex items-center justify-center flex-col lg:flex-row">
+        <div class="block mb-10 lg:mb-[11rem]">
 
+          <!-- cards -->
+         <div class="flex items-center justify-center lg:space-x-7 flex-row mb-5 lg:mb-11">
+            <!-- card one -->
+            <div class="card bg-veryLightGray rounded-md relative w-full lg:w-[33.375rem] text-center pt-[3.75rem] pb-10 px-6 hidden lg:flex">
+              <!-- image -->
+              <div class="image w-[4.875rem] h-[4.875rem] absolute -top-[15%] left-1/2 -translate-x-1/2">
+                <img src="images/avatar-anisha.png" alt="avatar-anisha" class="w-full h-full rounded-full">
+
+              </div>
+
+              <!-- text -->
+              <div class="text mt-2">
+                <p class="mb-7 text-veryDarkBlue text-xl font-bold">Anisha Li</p>
+                <p class="text-darkGrayishBlue">“Manage has supercharged our team’s workflow. The ability to maintain 
+                  visibility on larger milestones at all times keeps everyone motivated.”</p>
+              </div>
+
+            </div>
+
+            <!-- card two -->
+            <div class="card bg-veryLightGray rounded-md relative w-full lg:w-[33.375rem] text-center pt-[3.75rem] pb-10 px-6">
+              <!-- image -->
+              <div class="image w-[4.875rem] h-[4.875rem] absolute -top-[15%] left-1/2 -translate-x-1/2">
+                <img src="images/avatar-ali.png" alt="avatar-ali" class="w-full h-full rounded-full">
+
+              </div>
+
+              <!-- text -->
+              <div class="text mt-2">
+                <p class="mb-7 text-veryDarkBlue text-xl font-bold">Ali Bravo</p>
+                <p class="text-darkGrayishBlue">“We have been able to cancel so many other subscriptions since using 
+                  Manage. There is no more cross-channel confusion and everyone is much 
+                  more focused.”</p>
+              </div>
+
+            </div>
+
+            <!-- card three -->
+            <div class="card bg-veryLightGray rounded-md relative w-full lg:w-[33.375rem] text-center pt-[3.75rem] pb-10 px-6 hidden lg:flex">
+              <!-- image -->
+              <div class="image w-[4.875rem] h-[4.875rem] absolute -top-[15%] left-1/2 -translate-x-1/2">
+                <img src="images/avatar-richard.png" alt="avatar-richard" class="w-full h-full rounded-full">
+              </div>
+
+              <!-- text -->
+              <div class="text mt-2">
+                <p class="mb-7 text-veryDarkBlue text-xl font-bold">Richard Watts</p>
+                <p class="text-darkGrayishBlue">“Manage allows us to provide structure and process. It keeps us organized 
+                  and focused. I can’t stop recommending them to everyone I talk to!”</p>
+              </div>
+
+            </div>
+
+            <!-- card four -->
+            <div class="card bg-veryLightGray rounded-md relative w-full lg:w-[33.375rem] text-center pt-[3.75rem] pb-10 px-6 hidden">
+              <!-- image -->
+              <div class="image w-[4.875rem] h-[4.875rem] absolute -top-[15%] left-1/2 -translate-x-1/2">
+                <img src="images/avatar-shanai.png" alt="avatar-richard" class="w-full h-full rounded-full">
+              </div>
+
+              <!-- text -->
+              <div class="text mt-2">
+                <p class="mb-7 text-veryDarkBlue text-xl font-bold">Shanai Gough</p>
+                <p class="text-darkGrayishBlue">“Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
+              </div>
+
+            </div>
+         </div>
+
+         <!-- slider mobile indicator-->
+         <div class="flex items-center justify-center space-x-1 mb-11 lg:hidden">
+           <span class="w-2 h-2 border border-brightRed rounded-full"></span>
+           <span class="w-2 h-2 bg-brightRed border border-brightRed rounded-full"></span>
+           <span class="w-2 h-2 border border-brightRed rounded-full"></span>
+           <span class="w-2 h-2 border border-brightRed rounded-full"></span>
+         </div>
+
+         <!-- cta -->
+         <a href="#" class="btn block w-fit mx-auto ">Get Started</a>
         </div>
       </div>
     </section>
@@ -147,24 +225,7 @@
 
   <!--  
 
-  Anisha Li
-  “Manage has supercharged our team’s workflow. The ability to maintain 
-  visibility on larger milestones at all times keeps everyone motivated.”
-
-  Ali Bravo
-  “We have been able to cancel so many other subscriptions since using 
-  Manage. There is no more cross-channel confusion and everyone is much 
-  more focused.”
-
-  Richard Watts
-  “Manage allows us to provide structure and process. It keeps us organized 
-  and focused. I can’t stop recommending them to everyone I talk to!”
-
-  Shanai Gough
-  “Their software allows us to track, manage and collaborate on our projects 
-  from anywhere. It keeps the whole team in-sync without being intrusive.”
-
-  Get Started
+  
 
   Simplify how your team works today.
   Get Started
