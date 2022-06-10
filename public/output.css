@@ -771,6 +771,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 2.5rem;
 }
 
+.pt-\[6\.1875rem\]{
+  padding-top: 6.1875rem;
+}
+
+.pb-\[5\.1875rem\]{
+  padding-bottom: 5.1875rem;
+}
+
 .text-left{
   text-align: left;
 }
@@ -873,16 +881,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: hsla(12, 88%, 59%, 0.7);
 }
 
-.hide{
-  visibility: hidden;
-  transform: scale(0);
-  opacity: o;
-}
-
-.show-slide{
-  visibility: visible;
-  transform: scale(1);
-  opacity: 1;
+.red-bg{
+  background-color: hsl(12, 88%, 59%);
 }
 
 .attribution {
@@ -1088,6 +1088,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:pr-28{
     padding-right: 7rem;
+  }
+
+  .lg\:pt-\[4\.1875rem\]{
+    padding-top: 4.1875rem;
+  }
+
+  .lg\:pb-\[3\.75rem\]{
+    padding-bottom: 3.75rem;
   }
 
   .lg\:text-left{

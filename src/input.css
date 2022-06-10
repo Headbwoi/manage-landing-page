@@ -22,6 +22,8 @@
  .btn{
      @apply font-medium text-veryLightGray bg-brightRed shadow-lg shadow-shadowRed hover:bg-brightRedLight py-3 px-8 rounded-full;
  }
- 
+.red-bg{
+    background-color: hsl(12, 88%, 59%);
+}
 .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
