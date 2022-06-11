@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [live site](https://your-live-site-url.com)
+- Live Site URL: [live site](https://headbwoi.github.io/manage-landing-page/)
 
 ## My process
 
@@ -42,5 +42,5 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Headbwoi)
-- Twitter - [@yourusername](https://www.twitter.com/headbwoi_1)
+- Frontend Mentor - [@Headbwoi](https://www.frontendmentor.io/profile/Headbwoi)
+- Twitter - [@headbwoi_1](https://www.twitter.com/headbwoi_1)
