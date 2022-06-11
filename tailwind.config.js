@@ -7,8 +7,7 @@ module.exports = {
     screens: {
       sm: "480px",
       md: "768px",
-      lg: "1111px",
-      xl: "1440px",
+      lg: "1024px",
     },
     colors: {
       brightRed: "hsl(12, 88%, 59%)",
