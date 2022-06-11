@@ -223,7 +223,7 @@
 
     <!-- cta section -->
 
-    <section class="cta bg-brightRed relative before:absolute before:block before:top-14 before:-left-44 before:bg-veryPaleRed before:opacity-10 before:w-72 before:h-72 before:rounded-t-full before:rotate-45 before:z-0 before:lg:h-[30rem] before:lg:-top-11 before:lg:left-52 after:hidden after:lg:absolute after:lg:block after:lg:-top-11 after:lg:-right-[15.625rem] after:bg-veryPaleRed after:opacity-10 after:lg:w-[25.5rem] after:lg:h-48 after:lg:rounded-b-full overflow-hidden">
+    <section class="cta bg-brightRed relative before:absolute before:block before:top-14 before:-left-44 before:bg-veryPaleRed before:opacity-10 before:w-72 before:h-72 before:rounded-t-full before:rotate-45 before:z-0 before:lg:h-[30rem] before:lg:-top-11 before:lg:left-52 after:hidden after:lg:absolute after:lg:block after:lg:-top-11 after:lg:-right-[15.625rem] after:bg-veryPaleRed after:opacity-10 after:lg:w-[28.5rem] after:lg:h-48 after:lg:rounded-b-full overflow-hidden">
 
       <div class="container pt-[6.1875rem] pb-[5.1875rem] px-7 lg:px-0 lg:pt-[4.1875rem] lg:pb-[3.75rem]">
         <div class="flex justify-between items-center flex-col lg:flex-row">
@@ -240,34 +240,68 @@
     <!-- footer section -->
 
     <section class="footer bg-veryDarkBlue">
-      <div class="container pt-[3.125rem]">
-        <div class="flex justify-between items-center flex-col lg:flex-row-reverse">
+      <div class="container pt-[3.125rem] lg:pb-14">
+        <div class="flex justify-between items-center lg:items-start flex-col px-5 lg:px-0 lg:flex-row-reverse">
 
+          <!-- form -->
+          <div class="form mb-14 lg:mb-0 flex justify-between lg:items-end flex-col">
+            <form>
+              <div class="flex items-start">
+                <div class="block">
+                  <input type="text" id="email" placeholder="Updates in your inbox…" class="rounded-full py-4 px-5 mr-2 outline-none">
+                  <p class="text-brightRed text-xs ml-5 mt-1" id="errortxt"></p>
+                </div>
+                <button type="submit" class="rounded-full py-4 px-7 bg-brightRed text-veryLightGray uppercase font-medium outline-none  hover:bg-lightRed">Go</button>
+              </div>
+            </form>
+            <p class="hidden lg:block text-darkGrayishBlue font-normal mt-[3.75rem]">Copyright 2020. All Rights Reserved</p>
+          </div>
+
+          <!-- links -->
+          <div class="links flex justify-between items-start space-x-28 mb-11 lg:mb-0">
+
+            <div class="links1 block space-y-3">
+              <a href="#" class="block text-lg text-veryLightGray hover:text-brightRed font-medium">Home</a>
+              <a href="#" class="block text-lg text-veryLightGray hover:text-brightRed font-medium">Pricing</a>
+              <a href="#" class="block text-lg text-veryLightGray hover:text-brightRed font-medium">Products</a>
+              <a href="#" class="block text-lg text-veryLightGray hover:text-brightRed font-medium">About Us</a>
+            </div>
+            <div class="links2 block text-lg space-y-3">
+              <a href="#" class="block text-lg text-veryLightGray hover:text-brightRed font-medium">Careers</a>
+              <a href="#" class="block text-lg text-veryLightGray hover:text-brightRed font-medium">Community</a>
+              <a href="#" class="block text-lg text-veryLightGray hover:text-brightRed font-medium">Privacy Policy</a>
+            </div>
+
+          </div>
+
+          <!-- icons -->
+
+          <div class="icons flex flex-col lg:flex-col-reverse">
+
+            <div class="img-icons flex space-x-7 mb-11 lg:mb-0">
+              <img src="images/icon-facebook.svg" alt="icon-facebook" class="w-9">
+              <img src="images/icon-youtube.svg" alt="icon-youtube" class="w-9">
+              <img src="images/icon-twitter.svg" alt="icon-twitter" class="w-9">
+              <img src="images/icon-pinterest.svg" alt="icon-pinterest" class="w-9">
+              <img src="images/icon-instagram.svg" alt="icon-instagram" class="w-9">
+            </div>
+
+            <div class="mb-12 lg:mb-20">
+              <img src="images/logo1.svg" alt="icon-logo" class="mx-auto lg:mx-0">
+            </div>
+          </div>
+          <p class="lg:hidden text-darkGrayishBlue font-normal mx-auto">Copyright 2020. All Rights Reserved</p>
         </div>
       </div>
     </section>
     
   </main>
 
-  <!--  
-
-  Home
-  Pricing
-  Products
-  About Us
-  Careers
-  Community
-  Privacy Policy
-
-  Updates in your inbox…
-  Go
-
-  Copyright 2020. All Rights Reserved
-
+    
   
-  <div class="attribution">
+  <div class="attribution bg-veryDarkBlue text-veryLightGray">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+    Coded by <a href="#">Headbwoi</a>.
+  </div>
 </body>
 </html>

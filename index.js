@@ -4,14 +4,12 @@ const slideCards = document.querySelectorAll(".card")
 
  const sliderIndicatorParent = document.querySelector("#slideIndicator"),
     sliderIndicator = sliderIndicatorParent.querySelectorAll("span")
-
-//     one = document.querySelector("#one"),
-//     two = document.querySelector("#two"),
-//     three = document.querySelector("#three"),
-//     four = document.querySelector("#four")
+const form = document.querySelector("form"),
+    email = form.querySelector("#email"),
+    errorTxt = form.querySelector("#errortxt")
 
 
-
+    //mobile menu
 hamburger.addEventListener("click", ()=>{
     mobileMenu.classList.toggle("show")
     mobileMenu.classList.add("no-scroll")
@@ -27,7 +25,6 @@ hamburger.addEventListener("click", ()=>{
 //slider
 
 let slideIndex = 0
-
 
 const slideTestimonial = () => {
     
@@ -62,5 +59,31 @@ const slideTestimonial = () => {
 
 }
 setInterval(() => slideTestimonial(), 3000);
+
+//form validation
+
+form.addEventListener("submit", e => {
+    e.preventDefault()
+
+    checkEmail()
+
+    email.onkeyup = () => checkEmail()
+
+    function checkEmail() {
+        let eValue = email.value
+        let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/; //pattern for validate email
+
+        if (eValue === "") {
+            email.classList.add("error")
+            errorTxt.textContent = "Please enter your email"
+        }else if(!eValue.match(pattern)){
+            email.classList.add("error")
+            errorTxt.textContent = "Please insert a valid email"
+        }else {
+            email.classList.remove("error")
+            errorTxt.textContent = ""
+        }
+    }
+})
 
 slideTestimonial()
